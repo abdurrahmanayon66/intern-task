@@ -5,8 +5,8 @@ import Image from "next/image";
 
 function Slider() {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
-  const divs: number[] = [1, 2, 3, 4, 5, 6, 7];
-  const colors: string[] = ["#ff8f8e", "#c89ffb", "#95f9d3", "#8c1096", "#1c345a", "#de9852", "#8c1096"];
+  const divs: number[] = [1, 2, 3, 4, 5, 6];
+  const colors: string[] = ["#ff8f8e", "#c89ffb", "#95f9d3", "#8c1096", "#1c345a", "#de9852"];
 
   const handleNext = () => {
     if (currentIndex > 0) {
