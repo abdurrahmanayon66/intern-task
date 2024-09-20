@@ -3,11 +3,7 @@ import React, { useState } from "react";
 import images from "../assets/images";
 import Image from "next/image";
 
-interface SliderProps {
-  className?: string;
-}
-
-const Slider: React.FC<SliderProps> = ({ className }) => {
+function Slider() {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const divs: number[] = [1, 2, 3, 4, 5, 6, 7];
   const colors: string[] = ["#ff8f8e", "#c89ffb", "#95f9d3", "#8c1096", "#1c345a", "#de9852", "#8c1096"];
@@ -25,7 +21,8 @@ const Slider: React.FC<SliderProps> = ({ className }) => {
   };
 
   return (
-    <div className={`absolute top-[-320px] w-full h-screen flex items-center`}>
+    <div>
+       <div className="absolute top-[-320px] w-full h-screen flex items-center">
       <div className="relative w-full flex overflow-hidden">
         <div
           className="flex transition-transform duration-500 ease-in-out"
@@ -61,7 +58,8 @@ const Slider: React.FC<SliderProps> = ({ className }) => {
         </button>
       </div>
     </div>
-  );
-};
+    </div>
+  )
+}
 
-export default Slider;
+export default Slider
