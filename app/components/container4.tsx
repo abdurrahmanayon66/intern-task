@@ -41,13 +41,13 @@ function Container4() {
       <Image
         src={images.background4}
         alt="vector1"
-        className="object-contain max-w-[100%]"
+        className="object-contain w-[100vw]"
       />
 
       <Image
         src={images.background5}
         alt="vector2"
-        className="object-contain max-w-[100%] relative bottom-"
+        className="object-contain w-[100vw]"
       />
 
       <div className="w-full flex justify-between px-16 relative bottom-80">

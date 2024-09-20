@@ -13,7 +13,7 @@ function View() {
       <Image
         src={images.vector1}
         alt="vector1"
-        className=""
+        className="w-[100vw]"
       />
       <Container1/>
       <Container2/>
