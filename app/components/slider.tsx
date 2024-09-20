@@ -22,7 +22,7 @@ function Slider() {
 
   return (
     <div>
-       <div className="absolute top-[-340px] w-full h-screen flex items-center">
+       <div className="absolute top-[-360px] w-full h-screen flex items-center">
       <div className="relative w-full flex overflow-hidden">
         <div
           className="flex transition-transform duration-500 ease-in-out"
